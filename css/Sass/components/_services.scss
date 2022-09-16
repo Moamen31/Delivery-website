@@ -1,0 +1,69 @@
+.services {
+    .title {
+        h1 {
+            width: 310px;
+            @include w-100;
+            margin: 0 auto 60px;
+            text-align: center;
+            line-height: 1.5;
+            color: $main-dark-color;
+        }
+    }
+
+    .container {
+        .services-cards {
+            @include breakpoints(mobile){
+                @include flex-col;
+            }
+            .card {
+                text-align: center;
+                box-shadow: 0 3px 15px 3px rgb(0 0 0 / 6%);
+                padding: 20px 30px;
+                transition: $transition;
+                transform: scale(0.9);
+                border-radius: 6px;
+
+                &:hover {
+                    transform: scale(1);
+                    box-shadow: 0 3px 15px 3px rgb(0 0 0 / 9%);
+                }
+
+                h2 {
+                    color: $main-dark-color;
+                    font-size: 21px;
+                }
+
+                svg {
+                    width: 170px;
+                    fill: $main-yellow-color;
+                    margin: 17px 0;
+                }
+
+                p {
+                    color: $main-grey-color;
+                    line-height: 1.7;
+                    margin-bottom: 15px;
+                }
+
+                span {
+                    font-size: 18px;
+                    cursor: pointer;
+                    position: relative;
+                    &::before{
+                        @include pos-abs{
+                            bottom: -3px;
+                            left: 0;
+                            background-color: $main-yellow-color;
+                            width: 0;
+                            height: 3px;
+                            transition: $transition;
+                        }
+                    }
+                }
+                &:hover span::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

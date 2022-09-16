@@ -1,0 +1,32 @@
+
+.container{
+    @include breakpoints(mobile){
+        width: 100%;
+    }
+    @include breakpoints(small){
+        width: 750px;
+    }
+    @include breakpoints(medium){
+        width: 970px;
+    }
+    @include breakpoints(large){
+        width: 1170px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// reusable css classes
+.section{
+    padding: 100px 0;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

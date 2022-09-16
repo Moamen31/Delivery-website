@@ -1,0 +1,10 @@
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #ddd;
+    &-thumb{
+        background-color: $main-yellow-color;
+        &:hover{
+            background-color: #f2be23;
+        }
+    }
+}

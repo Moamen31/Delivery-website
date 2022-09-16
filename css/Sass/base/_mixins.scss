@@ -1,0 +1,53 @@
+// media query and responsive layout
+
+@mixin breakpoints($point) {
+    @if $point ==mobile {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $point ==small {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $point ==medium {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $point ==large {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+
+// change flex direction
+@mixin flex-col{
+    flex-direction: column;
+    gap: 35px;
+}
+
+// center text and width 100%
+@mixin center-text{
+    width: 100%;
+    text-align: center;
+}
+
+// width 100%
+@mixin w-100{
+    width: 100%;
+}
+
+// position absolute
+@mixin pos-abs{
+    content: "";
+    position: absolute;
+    @content;
+}
+

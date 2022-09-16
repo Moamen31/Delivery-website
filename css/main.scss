@@ -1,0 +1,36 @@
+// import variables
+@import './Sass/config/variables';
+
+// import mixins
+@import './Sass/base/base';
+
+// import mixins
+@import './Sass/base/mixins';
+
+// import theme
+@import './Sass/theme/theme';
+
+// import grid system
+@import './Sass/layout/layout';
+
+// import layout header
+@import './Sass/components/header';
+
+// import home
+@import './Sass/components/sections';
+
+// import buttons
+@import './Sass/components/buttons';
+
+//import services
+@import './Sass/components/services';
+
+// import footer
+@import './Sass/components/footer';
+
+//import scroll
+@import './Sass/components/scroll';
+
+//import scroll bar
+@import './Sass/components/scroll-bar';
+

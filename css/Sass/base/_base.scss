@@ -1,0 +1,41 @@
+// reset
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// body to add font
+body {
+    font-family: 'poppins', sans-serif;
+    transition: 0.5s;
+}
+
+// reset ul
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    color: $main-grey-color;
+    line-height: 1.5;
+}
+
+h1,h2,h3, li, a{
+    color: $main-dark-color;
+}
